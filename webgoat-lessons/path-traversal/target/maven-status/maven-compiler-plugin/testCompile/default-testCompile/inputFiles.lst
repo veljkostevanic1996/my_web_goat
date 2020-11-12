@@ -1,4 +1,4 @@
-/home/brki/projects/WebGoat/webgoat-lessons/path-traversal/src/test/java/org/owasp/webgoat/path_traversal/ProfileUploadRetrievalTest.java
-/home/brki/projects/WebGoat/webgoat-lessons/path-traversal/src/test/java/org/owasp/webgoat/path_traversal/ProfileUploadRemoveUserInputTest.java
-/home/brki/projects/WebGoat/webgoat-lessons/path-traversal/src/test/java/org/owasp/webgoat/path_traversal/ProfileUploadFixTest.java
-/home/brki/projects/WebGoat/webgoat-lessons/path-traversal/src/test/java/org/owasp/webgoat/path_traversal/ProfileUploadTest.java
+/home/veljkostevanic/Desktop/devops_web_goat/webgoat-lessons/path-traversal/src/test/java/org/owasp/webgoat/path_traversal/ProfileUploadRemoveUserInputTest.java
+/home/veljkostevanic/Desktop/devops_web_goat/webgoat-lessons/path-traversal/src/test/java/org/owasp/webgoat/path_traversal/ProfileUploadFixTest.java
+/home/veljkostevanic/Desktop/devops_web_goat/webgoat-lessons/path-traversal/src/test/java/org/owasp/webgoat/path_traversal/ProfileUploadTest.java
+/home/veljkostevanic/Desktop/devops_web_goat/webgoat-lessons/path-traversal/src/test/java/org/owasp/webgoat/path_traversal/ProfileUploadRetrievalTest.java

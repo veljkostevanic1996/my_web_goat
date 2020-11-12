@@ -1,7 +1,7 @@
-/home/brki/projects/WebGoat/webgoat-lessons/crypto/src/main/java/org/owasp/webgoat/crypto/XOREncodingAssignment.java
-/home/brki/projects/WebGoat/webgoat-lessons/crypto/src/main/java/org/owasp/webgoat/crypto/HashingAssignment.java
-/home/brki/projects/WebGoat/webgoat-lessons/crypto/src/main/java/org/owasp/webgoat/crypto/CryptoUtil.java
-/home/brki/projects/WebGoat/webgoat-lessons/crypto/src/main/java/org/owasp/webgoat/crypto/EncodingAssignment.java
-/home/brki/projects/WebGoat/webgoat-lessons/crypto/src/main/java/org/owasp/webgoat/crypto/SecureDefaultsAssignment.java
-/home/brki/projects/WebGoat/webgoat-lessons/crypto/src/main/java/org/owasp/webgoat/crypto/SigningAssignment.java
-/home/brki/projects/WebGoat/webgoat-lessons/crypto/src/main/java/org/owasp/webgoat/crypto/Crypto.java
+/home/veljkostevanic/Desktop/devops_web_goat/webgoat-lessons/crypto/src/main/java/org/owasp/webgoat/crypto/HashingAssignment.java
+/home/veljkostevanic/Desktop/devops_web_goat/webgoat-lessons/crypto/src/main/java/org/owasp/webgoat/crypto/SigningAssignment.java
+/home/veljkostevanic/Desktop/devops_web_goat/webgoat-lessons/crypto/src/main/java/org/owasp/webgoat/crypto/Crypto.java
+/home/veljkostevanic/Desktop/devops_web_goat/webgoat-lessons/crypto/src/main/java/org/owasp/webgoat/crypto/XOREncodingAssignment.java
+/home/veljkostevanic/Desktop/devops_web_goat/webgoat-lessons/crypto/src/main/java/org/owasp/webgoat/crypto/CryptoUtil.java
+/home/veljkostevanic/Desktop/devops_web_goat/webgoat-lessons/crypto/src/main/java/org/owasp/webgoat/crypto/EncodingAssignment.java
+/home/veljkostevanic/Desktop/devops_web_goat/webgoat-lessons/crypto/src/main/java/org/owasp/webgoat/crypto/SecureDefaultsAssignment.java

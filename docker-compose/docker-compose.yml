@@ -1,0 +1,43 @@
+version: '3'
+networks:
+  webwolflocal:
+services:
+  webgoat:
+#    hostname: www.webgoat.local
+    image: brajcic/docker_test_repo:v8.1.0
+    environment:
+      - node.labels.type == veljko
+      - MYSQL_ROOT_PASSWORD=admin
+      - MYSQL_ALLOW_EMPTY_PASSWORD=no
+      - MYSQL_RANDOM_ROOT_PASSWORD=yes
+      - TZ=Europe/Amsterdam
+    volumes:
+      - .:/home/webgoat/.webgoat
+    working_dir: /home/webgoat
+    #command: --server.address=0.0.0.0
+    networks:
+      webwolflocal:
+        aliases:
+          - goat.webgoat.local
+  webwolf:
+    image: webgoat/webwolf
+    environment:
+      - WEBWOLF_HOST=webwolf
+      - WEBWOLF_PORT=9090
+      - TZ=Europe/Amsterdam
+    #command: --spring.datasource.url=jdbc:hsqldb:hsql://webgoat:9001/webgoat --server.address=0.0.0.0
+    networks:
+      webwolflocal:
+        aliases:
+          - wolf.webwolf.local
+    depends_on:
+      - webgoat
+  reverseproxy:
+    hostname: www.webwolf.local
+    image: webgoat/reverseproxy
+    networks:
+      webwolflocal:
+        aliases:
+          - www.webwolf.local
+    ports:
+      - 80:80

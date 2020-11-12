@@ -1,7 +1,7 @@
-/home/brki/projects/WebGoat/webgoat-lessons/csrf/src/main/java/org/owasp/webgoat/csrf/Review.java
-/home/brki/projects/WebGoat/webgoat-lessons/csrf/src/main/java/org/owasp/webgoat/csrf/CSRFConfirmFlag1.java
-/home/brki/projects/WebGoat/webgoat-lessons/csrf/src/main/java/org/owasp/webgoat/csrf/CSRF.java
-/home/brki/projects/WebGoat/webgoat-lessons/csrf/src/main/java/org/owasp/webgoat/csrf/CSRFFeedback.java
-/home/brki/projects/WebGoat/webgoat-lessons/csrf/src/main/java/org/owasp/webgoat/csrf/CSRFLogin.java
-/home/brki/projects/WebGoat/webgoat-lessons/csrf/src/main/java/org/owasp/webgoat/csrf/CSRFGetFlag.java
-/home/brki/projects/WebGoat/webgoat-lessons/csrf/src/main/java/org/owasp/webgoat/csrf/ForgedReviews.java
+/home/veljkostevanic/Desktop/devops_web_goat/webgoat-lessons/csrf/src/main/java/org/owasp/webgoat/csrf/CSRFGetFlag.java
+/home/veljkostevanic/Desktop/devops_web_goat/webgoat-lessons/csrf/src/main/java/org/owasp/webgoat/csrf/ForgedReviews.java
+/home/veljkostevanic/Desktop/devops_web_goat/webgoat-lessons/csrf/src/main/java/org/owasp/webgoat/csrf/CSRFConfirmFlag1.java
+/home/veljkostevanic/Desktop/devops_web_goat/webgoat-lessons/csrf/src/main/java/org/owasp/webgoat/csrf/CSRFLogin.java
+/home/veljkostevanic/Desktop/devops_web_goat/webgoat-lessons/csrf/src/main/java/org/owasp/webgoat/csrf/CSRF.java
+/home/veljkostevanic/Desktop/devops_web_goat/webgoat-lessons/csrf/src/main/java/org/owasp/webgoat/csrf/Review.java
+/home/veljkostevanic/Desktop/devops_web_goat/webgoat-lessons/csrf/src/main/java/org/owasp/webgoat/csrf/CSRFFeedback.java

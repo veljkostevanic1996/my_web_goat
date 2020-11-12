@@ -1,6 +1,6 @@
-/home/brki/projects/WebGoat/webgoat-lessons/path-traversal/src/main/java/org/owasp/webgoat/path_traversal/ProfileUploadRetrieval.java
-/home/brki/projects/WebGoat/webgoat-lessons/path-traversal/src/main/java/org/owasp/webgoat/path_traversal/PathTraversal.java
-/home/brki/projects/WebGoat/webgoat-lessons/path-traversal/src/main/java/org/owasp/webgoat/path_traversal/ProfileUploadBase.java
-/home/brki/projects/WebGoat/webgoat-lessons/path-traversal/src/main/java/org/owasp/webgoat/path_traversal/ProfileUploadRemoveUserInput.java
-/home/brki/projects/WebGoat/webgoat-lessons/path-traversal/src/main/java/org/owasp/webgoat/path_traversal/ProfileUpload.java
-/home/brki/projects/WebGoat/webgoat-lessons/path-traversal/src/main/java/org/owasp/webgoat/path_traversal/ProfileUploadFix.java
+/home/veljkostevanic/Desktop/devops_web_goat/webgoat-lessons/path-traversal/src/main/java/org/owasp/webgoat/path_traversal/ProfileUpload.java
+/home/veljkostevanic/Desktop/devops_web_goat/webgoat-lessons/path-traversal/src/main/java/org/owasp/webgoat/path_traversal/ProfileUploadRetrieval.java
+/home/veljkostevanic/Desktop/devops_web_goat/webgoat-lessons/path-traversal/src/main/java/org/owasp/webgoat/path_traversal/ProfileUploadRemoveUserInput.java
+/home/veljkostevanic/Desktop/devops_web_goat/webgoat-lessons/path-traversal/src/main/java/org/owasp/webgoat/path_traversal/ProfileUploadBase.java
+/home/veljkostevanic/Desktop/devops_web_goat/webgoat-lessons/path-traversal/src/main/java/org/owasp/webgoat/path_traversal/PathTraversal.java
+/home/veljkostevanic/Desktop/devops_web_goat/webgoat-lessons/path-traversal/src/main/java/org/owasp/webgoat/path_traversal/ProfileUploadFix.java

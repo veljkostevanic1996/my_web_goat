@@ -12,7 +12,7 @@ org/owasp/webgoat/challenges/challenge7/PasswordResetLink.class
 org/owasp/webgoat/challenges/SolutionConstants.class
 org/owasp/webgoat/challenges/Email.class
 org/owasp/webgoat/challenges/ChallengeIntro.class
-org/owasp/webgoat/challenges/challenge7/Challenge7.class
 org/owasp/webgoat/challenges/Flag.class
+org/owasp/webgoat/challenges/challenge7/Challenge7.class
 org/owasp/webgoat/challenges/challenge7/MD5$MD5State.class
 org/owasp/webgoat/challenges/challenge1/Challenge1.class
