@@ -1,9 +1,18 @@
 version: '3'
+
+
+
 networks:
   webwolflocal:
+  private:
+    driver: overlay
+  esnet:
+
+
+
 services:
   webgoat:
-#    hostname: www.webgoat.local
+    hostname: www.webgoat.local
     image: brajcic/docker_test_repo:v8.1.0
     environment:
       - node.labels.type == veljko
@@ -41,3 +50,107 @@ services:
           - www.webwolf.local
     ports:
       - 80:80
+  hub:
+    image: selenium/hub
+    ports:
+      - "4444:4444"
+    deploy:
+      mode: global
+      placement:
+        constraints:
+          - node.role == manager
+    networks:
+      - private
+  firefox:
+    image: selenium/node-firefox
+    volumes:
+      - /dev/urandom:/dev/random
+    depends_on:
+      - hub
+    environment:
+      - HUB_PORT_4444_TCP_ADDR=hub
+      - HUB_PORT_4444_TCP_PORT=4444
+      - NODE_MAX_SESSION=1
+    entrypoint: bash -c 'SE_OPTS="-host $$HOSTNAME -port 5555" /opt/bin/entry_point.sh'
+    ports:
+      - "5555:5555"
+    deploy:
+      replicas: 1
+    networks:
+      - private
+
+
+
+  chrome:
+    image: selenium/node-chrome
+    volumes:
+      - /dev/urandom:/dev/random
+    depends_on:
+      - hub
+    environment:
+      - HUB_PORT_4444_TCP_ADDR=hub
+      - HUB_PORT_4444_TCP_PORT=4444
+      - NODE_MAX_SESSION=1
+    entrypoint: bash -c 'SE_OPTS="-host $$HOSTNAME -port 5556" /opt/bin/entry_point.sh'
+    ports:
+      - "5556:5556"
+    deploy:
+      replicas: 1
+    networks:
+      - private
+
+
+
+
+  elastic1:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.10.0
+    environment:
+      - discovery.type=single-node
+      - bootstrap.memory_lock=true
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - "ELASTIC_PASSWORD=myesPassword"
+    volumes:
+      - esdata:/usr/share/elasticsearch/data
+    ports:
+      - 9200:9200
+      - 9300:9300
+    networks:
+      - esnet
+
+
+
+
+
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.10.0
+    volumes:
+      - ./kibana.yml:/usr/share/kibana/config/kibana.yml
+    container_name: kib01
+    ports:
+      - "5601:5601"
+    environment:
+      ELASTICSEARCH_URL: "http://elastic1:9200"
+      ELASTICSEARCH_HOSTS: "http://elastic1:9200"
+    networks:
+      - esnet
+
+
+
+
+
+  logstash:
+    image: docker.elastic.co/logstash/logstash:7.10.0
+    volumes:
+      - ./logstash:/usr/share/logstash
+    #command: logstash -f /config-dir/logstash.conf
+    depends_on:
+      - elastic1
+
+
+
+
+volumes:
+  data01:
+    driver: local
+  esdata:
