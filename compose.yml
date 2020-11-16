@@ -9,4 +9,4 @@
         state: present
         name: w
         compose:
-          - ./docker_compose/docker-compose.yml
+          - ./docker-compose/docker-compose.yml
