@@ -9,7 +9,7 @@ networks:
 services:
   webgoat:
     hostname: www.webgoat.local
-    image: brajcic/docker_test_repo:v8.1.0
+    image: vstevanic/docker_test:v8.1.0
     environment:
       - node.labels.type == veljko
       - MYSQL_ROOT_PASSWORD=admin
